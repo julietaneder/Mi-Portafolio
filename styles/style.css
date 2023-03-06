@@ -1,0 +1,113 @@
+:root{
+    /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
+    --cor-de-fundo: #F5F5F5;
+    --cor-de-link: #000;
+
+    --montserrat: 'Montserrat', sans-serif;
+    --open-sans: 'Open Sans', sans-serif;
+}
+
+body {
+    font-family: var(--open-sans)
+}
+
+.container{
+    padding-right: 6%;
+    padding-left: 6%;
+}
+
+/* Mobile */
+
+/*Sección Menu*/
+
+section.menu{
+
+}
+
+/*Sección Title*/
+
+section.title{
+
+}
+
+/*Sección About*/
+
+section.about{
+
+}
+
+/*Sección Hobbies*/
+
+section.hobbies{
+    
+}
+
+/* Experiencia Académica*/
+
+section.academic{
+
+}
+
+/* experiencia*/
+
+section.experience{
+
+}
+
+/*Contacto*/
+
+section.formcontato{
+
+}
+
+/*Footer*/
+
+section.footer{
+   
+}
+
+
+/*Tablet*/
+@media (min-width: 768px) {
+
+/* Menú */
+
+/*title*/
+
+/*Skills*/
+
+/*Hobbies*/
+
+/*Formación Académica*/
+
+/*Experiencia Profesional*/
+
+}
+
+/*Desktop*/
+@media (min-width: 1024px) {
+
+    .container {
+        padding-left: calc((100% - 940px)/2);
+        padding-right: calc((100% - 940px)/2);
+    }
+
+/*Menu*/
+
+/*Titulo*/
+
+/*Sección sobre mi*/
+
+/*Skills*/
+
+/*Hobbies*/
+ 
+/*Formación Académica*/
+
+/*Experiencia Profesional*/
+
+ /*Contacto*/
+
+/*Footer*/
+
+}
