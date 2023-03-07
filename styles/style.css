@@ -1,51 +1,182 @@
 :root{
-    /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
-    --cor-de-fundo: #F5F5F5;
-    --cor-de-link: #000;
+    /* Colores */
+    --color-de-fondo: #F5F5F5;
+    --color-de-fondo-secundario: #d6d6d6;
+    --color-de-cards: #FFFFFF;
+    --color-de-link: #000000;
+    --color-de-texto: #464646;
 
+    /* Tipografía */
     --montserrat: 'Montserrat', sans-serif;
     --open-sans: 'Open Sans', sans-serif;
-}
-
-body {
-    font-family: var(--open-sans)
-}
-
-.container{
-    padding-right: 6%;
-    padding-left: 6%;
 }
 
 /* Mobile */
 
 /*Sección Menu*/
 
-section.menu{
+.menu{
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.menu__title{
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.menu__list__item{
+    display: none;
+}
+
+.menu__list__item__contacto, .menu__list__item__contacto a{
+    display: flex;
+    align-items: center;
+    font-size: 0.5rem;
+    text-decoration: none;
+    color: var(--color-de-link);
+    padding-left: 0.2rem;
 }
 
 /*Sección Title*/
 
-section.title{
+.title{
+    display: flex;
+}
 
+.title__profile{
+    border-radius: 100%;
+    width: 30%;
+    padding: 0.5rem;
+}
+
+.title__bio{
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-bottom: 0.7rem;
+    line-height: 1.8rem;
+}
+
+.title__subsection{
+    font-size: 1rem;
+    padding-bottom: 0.7rem;
+    line-height: 1.2rem;
+}
+
+.title__network{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.75rem 0;
+}
+
+.title__network__item a{
+    text-decoration: none;
+    color: var(--color-de-link);
+}
+
+.title__network__item img{
+    padding-left: 0.3rem;
 }
 
 /*Sección About*/
 
-section.about{
-
+.about__container{
+    background-color: var(--color-de-fondo-secundario);
+    width: 100vw;
+    padding: 1rem 0;
 }
 
-/*Sección Hobbies*/
-
-section.hobbies{
-    
+.about__title{
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding-bottom: 1rem;
 }
+
+.about__paragraph{
+    font-size: 1rem;
+    line-height: 1.2rem;
+    padding-top: 0.5rem;
+}
+
+/* Sección Skills y Hobies*/
+
+.skills__title, .hobbies__title{
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.skills__line, .hobbies__line{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.skills__box, .hobbies__box{
+    background-color: var(--color-de-cards);
+    box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.1);
+    width: 40%;
+    height: 118px;
+    border-radius: 0.2rem;
+    padding-left: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.skills__img{
+    width: 24px;
+    height: 37px;
+}
+
+.skills__name, .hobbies__name{
+    font-size: 1rem;
+    font-weight: bold;
+} 
 
 /* Experiencia Académica*/
 
-section.academic{
+.academic__title{
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 1rem 0;
+    text-align: center;
+}
 
+.academic__courses{
+    
+}
+
+.academic__courses__box{
+    background-color: var(--color-de-cards);
+    box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.1);
+
+}
+
+.academic__courses__list{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.academic__courses__item__img{
+    align-self: center;
+}
+
+.academic__courses__item__title{
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.5rem 0;
+    background-color: var(--color-de-fondo);
+}
+
+.academic__courses__item__subtitle{
+    font-size: 0.8rem;
+    padding-bottom: 0.5rem;
+    background-color: var(--color-de-fondo);
 }
 
 /* experiencia*/
@@ -86,11 +217,6 @@ section.footer{
 
 /*Desktop*/
 @media (min-width: 1024px) {
-
-    .container {
-        padding-left: calc((100% - 940px)/2);
-        padding-right: calc((100% - 940px)/2);
-    }
 
 /*Menu*/
 

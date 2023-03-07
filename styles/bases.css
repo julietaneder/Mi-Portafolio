@@ -1,0 +1,22 @@
+/* Mobile */
+
+body {
+    font-family: var(--open-sans);
+    color: var(--color-de-texto);
+    background-color: var(--color-de-fondo);
+}
+
+.container{
+    padding-right: 6%;
+    padding-left: 6%;
+    margin: 0 auto;
+}
+
+/*Desktop*/
+@media (min-width: 1024px) {
+
+    .container {
+        padding-left: calc((100% - 940px)/2);
+        padding-right: calc((100% - 940px)/2);
+    }
+}    
