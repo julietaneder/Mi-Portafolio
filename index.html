@@ -46,7 +46,7 @@
                         <h3 class="title__subsection">¡Te invito a que me conozcas un poco más! &#128071;</h3>
                         <ul class="title__network">
                             <li class="title__network__item"><a target="_blank" href="https://github.com/julietaneder">GitHub<img src="images/arrow.png"></a></li>
-                            <li class="title__network__item"><a target="_blank" href="www.linkedin.com/in/julieta-neder">LinkedIn<img src="images/arrow.png"></a></li>
+                            <li class="title__network__item"><a target="_blank" href="https://www.linkedin.com/in/julieta-neder">LinkedIn<img src="images/arrow.png"></a></li>
                             <li class="title__network__item"><a target="_blank" href="https://www.behance.net/julineder">Behance<img src="images/arrow.png"></a></li>
                             <li class="title__network__item"><a target="_blank" href="https://drive.google.com/file/d/1jS9Yo4Ru-0JJvAfjfei3Nc76Q32Ipsb8/view?usp=share_link">CV<img src="images/arrow.png"></a></li>
                         </ul>
@@ -145,33 +145,41 @@
             <section class="academic" id="formacion">
                 <h2 class="academic__title" >Formación académica</h2>
                 <div class="academic__courses">
-                    <div class="academic__courses__box">
-                        <ul class="academic__courses__list">
-                            <li class="academic__courses__item__img"><img src="images/alura_logo.png"></li>
-                            <li class="academic__courses__item__title"><h4>Desarrollo Front-End</h4></li>
-                            <li class="academic__courses__item__subtitle"><p>En curso - Alura</p></li>
-                        </ul>
+                    <div class="academic__box">
+                        <div class="academic__box__img">
+                            <img src="images/alura_logo.png">
+                        </div>
+                        <div class="academic__box__content">
+                            <h4 class="academic__box__item__title">Desarrollo Front-End</h4>
+                            <p class="academic__box__item__subtitle">En curso - Alura</p>
+                        </div>
                     </div>
-                    <div class="academic__courses__box">
-                        <ul class="academic__courses__list">
-                            <li class="academic__courses__item__img"><img src="images/coderhouse.png"></li>
-                            <li class="academic__courses__item__title"><h4>Desarrollo UX/UI</h4></li>
-                            <li class="academic__courses__item__subtitle"><p>2022 - Coderhouse</p></li>
-                        </ul>
+                    <div class="academic__box">
+                        <div class="academic__box__img">
+                            <img src="images/coderhouse.png">
+                        </div>
+                        <div class="academic__box__content">
+                            <h4 class="academic__box__item__title">Desarrollo UX/UI</h4>
+                            <p class="academic__box__item__subtitle">2022 - CoderHouse</p>
+                        </div>
                     </div>
-                    <div class="academic__courses__box">
-                        <ul class="academic__courses__list">
-                            <li class="academic__courses__item__img"><img src="images/siglo21.png"></li>
-                            <li class="academic__courses__item__title"><h4>Tecnicatura Universitaria en Marketing y Publicidad Digital</h4></li>
-                            <li class="academic__courses__item__subtitle"><p>2021 - UES21</p></li>
-                        </ul>
+                    <div class="academic__box">
+                        <div class="academic__box__img">
+                            <img src="images/siglo21.png">
+                        </div>
+                        <div class="academic__box__content">
+                            <h4 class="academic__box__item__title">Tecnicatura Universitaria en Marketing y Publicidad Digital</h4>
+                            <p class="academic__box__item__subtitle">2021 - UES21</p>
+                        </div>
                     </div>
-                    <div class="academic__courses__box">
-                        <ul class="academic__courses__list">
-                            <li class="academic__courses__item__img"><img src="images/mariano-moreno.png"></li>
-                            <li class="academic__courses__item__title"><h4>Tecnicatura Superior en Periodismo con orientación en Periodismo Deportivo</h4></li>
-                            <li class="academic__courses__item__subtitle"><p>2018 - Mariano Moreno Instituto Superior</p></li>
-                        </ul>
+                    <div class="academic__box">
+                        <div class="academic__box__img">
+                            <img src="images/mariano-moreno.png">
+                        </div>
+                        <div class="academic__box__content">
+                            <h4 class="academic__box__item__title">Tecnicatura Superior en Periodismo con orientación en Periodismo Deportivo</h4>
+                            <p class="academic__box__item__subtitle">2018 - Mariano Moreno Instituto Superior</p>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -186,7 +194,7 @@
                         <h3 class="experience__text">Challenge Alura Codificador</h3>
                         <div class="experience__description">
                             <span class="experience__repo"><a target="_blank" href="https://github.com/julietaneder/Encriptador-Alura-LATAM"><button class="experiencia__boton--repo">Repositorio</button></a></span>
-                            <span class="experience__demo"><a target="_blank" href="https://julietaneder.github.io/Encriptador-Alura-LATAM/"><button class="experience__boton-demo">Ver demo</button></a></span>
+                            <span class="experience__demo"><a target="_blank" href="https://julietaneder.github.io/Encriptador-Alura-LATAM/"><button class="experience__boton--demo">Ver demo</button></a></span>
                         </div>
                     </div>
                 </div>  
@@ -215,10 +223,22 @@
                         <h3 class="formcontacto__subtext">¿Quieres contactarme?</h3>
                         <h3 class="formcontacto__subtext">Podés hacerlo dejándome tus datos en el siguiente formulario y me pondré en contacto con usted lo antes posible.</h3>
                         <form class="formcontacto__form" name="form">
-                            <input class="formcontacto__input" type="text" name="nombre" placeholder="Nombre">
-                            <input class="formcontacto__input" type="email" name="email" placeholder="E-mail">
-                            <input class="formcontacto__input" type="text" name="asunto" placeholder="Asunto">
-                            <textarea class="formcontacto__textarea" rows="5" cols="40" id="mensaje" name="mensaje" placeholder="Mensaje"></textarea>
+                            <div class="formcontacto__box">
+                                <label for="formcontacto__input" class="formcontacto__label">Nombre</label>
+                                <input type="text" class="formcontacto__control" id="formcontacto__input" placeholder="Nombre">
+                            </div>
+                            <div class="formcontacto__box">
+                                <label for="formcontacto__input" class="formcontacto__label">Email</label>
+                                <input type="email" class="formcontacto__control" id="formcontacto__input" placeholder="Correo electrónico">
+                            </div>
+                            <div class="formcontacto__box">
+                                <label for="formcontacto__input" class="formcontacto__label">Asunto</label>
+                                <input type="text" class="formcontacto__control" id="formcontacto__input" placeholder="Asunto">
+                            </div>
+                            <div class="formcontacto__box">
+                                <label for="formcontacto__input" class="formcontacto__label">Mensaje</label>
+                                <textarea rows="5" cols="40" class="formcontacto__textarea" id="formcontacto__input" placeholder="Mensaje"></textarea>
+                            </div>
                             <button type="submit" class="formcontacto__boton">Enviar mensaje</button>
                         </form>
                     </div>
@@ -232,9 +252,9 @@
                     <p>2022</p>
                 </div>
                 <div class="footer__redes">
-                    <ul>
-                        <li class="title__network__item"><a target="_blank" href="www.linkedin.com/in/julieta-neder">LinkedIn</a></li>
-                        <li class="title__network__item"><a target="_blank" href="https://github.com/julietaneder">GitHub</a></li>
+                    <ul class="footer__redes__list">
+                        <li class="footer__list__item"><a target="_blank" href="https://www.linkedin.com/in/julieta-neder"><img src="images/linkedin.png"></a></li>
+                        <li class="footer__list__item"><a target="_blank" href="https://github.com/julietaneder"><img src="images/github.png"></a></li>
                     </ul>
                 </div>
             </section>
