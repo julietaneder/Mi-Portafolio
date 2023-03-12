@@ -1,9 +1,24 @@
+:root{
+    /* Colores */
+    --color-de-fondo: #F5F5F5;
+    --color-de-fondo-secundario: #e8e8e8;
+    --color-de-cards: #FFFFFF;
+    --color-de-link: #000000;
+    --color-de-texto: #464646;
+    --color-boton: #84416a;
+
+    /* Tipografía */
+    --montserrat: 'Montserrat', sans-serif;
+    --open-sans: 'Open Sans', sans-serif;
+}
+
 /* Mobile */
 
 body {
     font-family: var(--open-sans);
     color: var(--color-de-texto);
     background-color: var(--color-de-fondo);
+    
 }
 
 .container{

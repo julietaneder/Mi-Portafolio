@@ -1,17 +1,3 @@
-:root{
-    /* Colores */
-    --color-de-fondo: #F5F5F5;
-    --color-de-fondo-secundario: #d6d6d6;
-    --color-de-cards: #FFFFFF;
-    --color-de-link: #000000;
-    --color-de-texto: #464646;
-    --color-boton: #4d77ae;
-
-    /* Tipografía */
-    --montserrat: 'Montserrat', sans-serif;
-    --open-sans: 'Open Sans', sans-serif;
-}
-
 /* Mobile */
 
 /*Sección Menu*/
@@ -21,12 +7,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-image: url(../images/fondo_textura.jpg);
 }
 
 .menu__title{
     font-size: 1rem;
     font-weight: bold;
-    color: var(--color-de-texto);
 }
 
 .menu__list__item{
@@ -46,6 +32,7 @@
 
 .title{
     display: flex;
+    background-image: url(../images/fondo_textura.jpg);
 }
 
 .title__profile{
@@ -59,14 +46,12 @@
     font-weight: bold;
     padding-bottom: 0.7rem;
     line-height: 1.8rem;
-    color: var(--color-de-texto);
 }
 
 .title__subsection{
     font-size: 1rem;
     padding-bottom: 0.7rem;
     line-height: 1.2rem;
-    color: var(--color-de-texto);
 }
 
 .title__network{
@@ -78,6 +63,7 @@
 .title__network__item a{
     text-decoration: none;
     color: var(--color-de-link);
+    font-weight: bold;
 }
 
 .title__network__item img{
@@ -96,14 +82,12 @@
     font-size: 1.4rem;
     font-weight: bold;
     padding-bottom: 1rem;
-    color: var(--color-de-texto);
 }
 
 .about__paragraph{
     font-size: 1rem;
     line-height: 1.2rem;
     padding-top: 0.5rem;
-    color: var(--color-de-texto);
 }
 
 /* Sección Skills y Hobies*/
@@ -113,13 +97,13 @@
     font-weight: bold;
     padding: 1rem 0;
     text-align: center;
-    color: var(--color-de-texto);
 }
 
 .skills__line, .hobbies__line{
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
+    padding-bottom: 1rem;
 }
 
 .skills__box, .hobbies__box{
@@ -147,12 +131,15 @@
 
 /* Sección Experiencia Académica*/
 
+.academic{
+    background-color: var(--color-de-fondo-secundario);
+}
+
 .academic__title{
     font-size: 1.4rem;
     font-weight: bold;
     padding: 1rem 0;
     text-align: center;
-    color: var(--color-de-texto);
 }
 
 .academic__box{
@@ -161,11 +148,8 @@
 
 .academic__box__img{
     display: flex;
-    /* flex-wrap: wrap; */
-    /* flex-direction: column; */
     justify-content: center;
     align-items: center;
-    /* position: relative; */
     background-color: var(--color-de-cards);
     height: 200px;
 }
@@ -174,13 +158,11 @@
     font-size: 1rem;
     font-weight: bold;
     padding: 0.5rem 0;
-    color: var(--color-de-texto);
 }
 
 .academic__box__item__subtitle{
     font-size: 0.8rem;
     padding-bottom: 0.5rem;
-    color: var(--color-de-texto);
 }
 
 /* Sección Experiencia Profesional*/
@@ -190,7 +172,6 @@
     font-weight: bold;
     padding: 1rem 0;
     text-align: center;
-    color: var(--color-de-texto);
 }
 
 .experience__img{
@@ -201,13 +182,11 @@
     font-size: 1rem;
     font-weight: bold;
     padding: 0.5rem 0;
-    color: var(--color-de-texto);
 }
 
 .experience__text{
     font-size: 0.8rem;
     padding-bottom: 0.5rem;
-    color: var(--color-de-texto);
 }
 
 .experience__description{
@@ -237,6 +216,13 @@
 
 /*Sección Contacto*/
 
+.formcontacto__contacto{
+    background-image: url(../images/fondo1.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+
 .formcontacto__img{
     display: none;
 }
@@ -246,14 +232,12 @@
     font-weight: bold;
     padding: 1rem 0;
     text-align: left;
-    color: var(--color-de-texto);
 }
 
 .formcontacto__subtext{
     font-size: 1rem;
     line-height: 1.2rem;
     padding-top: 0.5rem;
-    color: var(--color-de-texto);
 }
 
 .formcontacto__box{
