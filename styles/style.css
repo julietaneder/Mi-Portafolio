@@ -161,7 +161,7 @@
 }
 
 .academic__box__item__subtitle{
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     padding-bottom: 0.5rem;
 }
 
@@ -185,7 +185,7 @@
 }
 
 .experience__text{
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     padding-bottom: 0.5rem;
 }
 
@@ -246,28 +246,30 @@
     padding: 1rem 0;
 }
 
+.formcontacto__control, .formcontacto__textarea{
+    padding: 1.25rem;
+    border-color: transparent;
+}
+
+.formcontacto__control:focus, .formcontacto__textarea:focus{
+    transition: all 0.2s ease;
+    outline: none;
+    border-bottom: 0.2rem solid var(--color-boton);
+}
+
 .formcontacto__label{
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: bold;
     color: var(--color-boton);
     padding-bottom: 0.5rem;
 }
 
-.formcontacto__control{
-    border-color: transparent;
-    border-bottom: solid 0.1rem var(--color-de-texto);
-    width: 100%;
-    height: 2.063rem;
-}
-
-.formcontacto__textarea{
-    border-color: transparent;
-    border-bottom: solid 0.1rem var(--color-de-texto);
-    width: 100%;
+.input-message-error{
+    display: none;
 }
 
 .formcontacto__boton{
-    width: 100%;
+    width: 50%;
     height: 2.5rem;
     background-color: var(--color-boton);
     border: solid 0.1rem var(--color-boton);

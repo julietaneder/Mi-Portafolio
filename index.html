@@ -20,7 +20,7 @@
         <div>
 
             <!-- Sección del Menú  --> 
-            <section class="menu">
+            <section class="menu container">
                 <header class="menu__header">
                     <h3 class="menu__title">Julieta Neder</h3>
                 </header>
@@ -38,9 +38,9 @@
 
             <!-- Sección del Header/Title -->
             <section class="title">
-                <div class="title__div">
-                <img class="title__profile container" src="images/profile.jpg">
-                    <div class="title__container container">
+                <div class="title__div container">
+                    <img class="title__profile" src="images/profile.jpg">
+                    <div class="title__container">
                         <h2 class="title__bio">¡Hola! Soy Julieta Neder, desarrolladora web.</h2>
                         <h3 class="title__subsection">Tengo formación en Diseño UX/UI y Front-End. Actualmente estoy participando del proyecto Oracle ONE en Alura Latam.</h3>
                         <h3 class="title__subsection">¡Te invito a que me conozcas un poco más! &#128071;</h3>
@@ -69,7 +69,7 @@
                 <div class="skills__line">
                     <div class="skills__box">
                         <ul>
-                            <li class="skills__img"><img src="images/htlm.png" alt="ícono html"></li>
+                            <li class="skills__img"><img src="images/html.png" alt="ícono html"></li>
                             <li class="skills__name">HTML 5</li>
                         </ul>
                     </div>
@@ -225,19 +225,23 @@
                         <form class="formcontacto__form" name="form">
                             <div class="formcontacto__box">
                                 <label for="formcontacto__input" class="formcontacto__label">Nombre</label>
-                                <input type="text" class="formcontacto__control" id="formcontacto__input" placeholder="Nombre">
+                                <input type="text" class="formcontacto__control" id="formcontacto__input" required data-tipo="nombre">
+                                <span class="input-message-error">Este campo no es válido</span>
                             </div>
                             <div class="formcontacto__box">
                                 <label for="formcontacto__input" class="formcontacto__label">Email</label>
-                                <input type="email" class="formcontacto__control" id="formcontacto__input" placeholder="Correo electrónico">
+                                <input type="email" class="formcontacto__control" id="formcontacto__input" required data-tipo="email">
+                                <span class="input-message-error">Este campo no es válido</span>
                             </div>
                             <div class="formcontacto__box">
                                 <label for="formcontacto__input" class="formcontacto__label">Asunto</label>
-                                <input type="text" class="formcontacto__control" id="formcontacto__input" placeholder="Asunto">
+                                <input type="text" class="formcontacto__control" id="formcontacto__input" required data-tipo="asunto">
+                                <span class="input-message-error">Este campo no es válido</span>
                             </div>
                             <div class="formcontacto__box">
                                 <label for="formcontacto__input" class="formcontacto__label">Mensaje</label>
-                                <textarea rows="5" cols="40" class="formcontacto__textarea" id="formcontacto__input" placeholder="Mensaje"></textarea>
+                                <textarea rows="5" cols="40" class="formcontacto__textarea" id="formcontacto__input" required data-tipo="mensaje"></textarea>
+                                <span class="input-message-error">Este campo no es válido</span>
                             </div>
                             <button type="submit" class="formcontacto__boton">Enviar mensaje</button>
                         </form>
@@ -249,7 +253,7 @@
             <section class="footer">
                 <div class="footer__rodapie">
                     <p>© Copyright Julieta Neder</p>
-                    <p>2022</p>
+                    <p>2023</p>
                 </div>
                 <div class="footer__redes">
                     <ul class="footer__redes__list">
@@ -260,6 +264,6 @@
             </section>
         </div>
         <!-- Script del documento JavaScript -->
-        <script src="validacion.js"></script>
+        <script src="./javascript/validacion.js"></script>
     </body>
 </html>
