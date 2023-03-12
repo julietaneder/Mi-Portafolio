@@ -227,7 +227,7 @@
                         <form class="formcontacto__form" name="form">
                             <div class="formcontacto__box">
                                 <label for="formcontacto__input" class="formcontacto__label">Nombre</label>
-                                <input type="text" class="formcontacto__control" id="formcontacto__input" required data-tipo="nombre">
+                                <input type="text" class="formcontacto__control" id="formcontacto__input" required maxlength="50" data-tipo="nombre">
                                 <span class="input-message-error">Este campo no es válido</span>
                             </div>
                             <div class="formcontacto__box">
@@ -237,12 +237,12 @@
                             </div>
                             <div class="formcontacto__box">
                                 <label for="formcontacto__input" class="formcontacto__label">Asunto</label>
-                                <input type="text" class="formcontacto__control" id="formcontacto__input" required data-tipo="asunto">
+                                <input type="text" class="formcontacto__control" id="formcontacto__input" required maxlength="50" data-tipo="asunto">
                                 <span class="input-message-error">Este campo no es válido</span>
                             </div>
                             <div class="formcontacto__box">
                                 <label for="formcontacto__input" class="formcontacto__label">Mensaje</label>
-                                <textarea rows="5" cols="40" class="formcontacto__textarea" id="formcontacto__input" required data-tipo="mensaje"></textarea>
+                                <textarea rows="5" cols="40" class="formcontacto__textarea" id="formcontacto__input" required maxlength="300" data-tipo="mensaje"></textarea>
                                 <span class="input-message-error">Este campo no es válido</span>
                             </div>
                             <button type="submit" class="formcontacto__boton">Enviar mensaje</button>
