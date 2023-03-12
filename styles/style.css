@@ -3,7 +3,7 @@
 /*Sección Menu*/
 
 .menu{
-    padding: 1rem;
+    padding: 1rem 6%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -103,6 +103,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
+    justify-content: center;
     padding-bottom: 1rem;
 }
 
@@ -110,7 +111,7 @@
     background-color: var(--color-de-cards);
     box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.1);
     width: 40%;
-    height: 118px;
+    height: 7.375rem;
     border-radius: 0.2rem;
     padding-left: 1.5rem;
     display: flex;
@@ -151,7 +152,7 @@
     justify-content: center;
     align-items: center;
     background-color: var(--color-de-cards);
-    height: 200px;
+    height: 12.5rem;
 }
 
 .academic__box__item__title{
@@ -217,14 +218,8 @@
 /*Sección Contacto*/
 
 .formcontacto__contacto{
-    background-image: url(../images/fondo1.jpg);
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-}
-
-.formcontacto__img{
-    display: none;
+    background-color: var(--color-de-fondo-secundario);
+    padding: 1rem;
 }
 
 .formcontacto__title{
@@ -240,27 +235,36 @@
     padding-top: 0.5rem;
 }
 
+.formcontacto__form{
+    background-image: url(../images/fondo2.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 1rem;
+
+}
+
 .formcontacto__box{
     display: flex;
     flex-direction: column;
-    padding: 1rem 0;
+    padding: 0.5rem 0;
 }
 
 .formcontacto__control, .formcontacto__textarea{
-    padding: 1.25rem;
+    padding: 0.5rem;
     border-color: transparent;
 }
 
 .formcontacto__control:focus, .formcontacto__textarea:focus{
     transition: all 0.2s ease;
     outline: none;
-    border-bottom: 0.2rem solid var(--color-boton);
+    border-bottom: 0.1rem solid var(--color-boton);
 }
 
 .formcontacto__label{
     font-size: 1.1rem;
     font-weight: bold;
     color: var(--color-boton);
+    text-shadow: 1px 1px 2px var(--color-de-cards), 0 0 1em var(--color-de-cards), 0 0 0.2em var(--color-de-cards);
     padding-bottom: 0.5rem;
 }
 
@@ -283,7 +287,7 @@
 
 .footer{
     padding: 1rem;
-    background-color: var(--color-de-fondo-secundario);
+    background-color: var(--color-de-fondo);
 }
 
 .footer__rodapie{
@@ -306,39 +310,188 @@
 /*Tablet*/
 @media (min-width: 768px) {
 
-/* Menú */
+    /* Sección Title */
+    .title__div{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
 
-/*title*/
+    .title__container{
+        padding-left: 1rem;
+    }
 
-/*Skills*/
+    .title__network{
+        justify-content: flex-start;
+    }
 
-/*Hobbies*/
+    .title__network__item{
+        padding-right: 2rem;
+    }
 
-/*Formación Académica*/
+    /* Sección Skills y Hobbies */
+    .skills__box, .hobbies__box{
+    width: 15%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    }
 
-/*Experiencia Profesional*/
+    /* Sección Experiencia Académica */
+    .academic__courses{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    }
 
+    .academic__box{
+    width: 45%;
+    }
+
+    /* Sección Experiencia Profesional */
+    .experience__box{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 1.5rem;
+    }
+
+    .experience__img{
+    width: 50%;
+    }
+
+    .experience__info{
+    padding-left: 5rem;
+    }
+
+    /* Sección Contacto */
+    .formcontacto__contacto{
+        padding: 1.5rem 0;
+        background-image: url(../images/fondo1.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100%;
+    }
+
+    .formcontacto__text{
+        width: 50%;
+        box-shadow: 1px 7px 5px rgba(0, 0, 0, 0.3);
+        background-color: var(--color-de-fondo-secundario);
+        padding: 1rem;
+    }
+
+    .formcontacto__form{
+        background-image: none;
+    }
+
+    .formcontacto__boton{
+        margin-top: 1rem;
+        cursor: pointer;
+    }
 }
 
 /*Desktop*/
 @media (min-width: 1024px) {
 
-/*Menu*/
+    /* Sección Menú */
+    .menu__list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
 
-/*Titulo*/
+    .menu__list__item{
+    display: inline-block;
+    padding: 1rem;
+    }
 
-/*Sección sobre mi*/
+    .menu__list__item a{
+    text-decoration: none;
+    font-size: 1rem;
+    color: var(--color-de-link);
+    position: relative;
+    }
 
-/*Skills*/
+    .menu__list__item a:after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #C4077B;
+    width: 100%;
+    height: 0.1rem;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.6s ease-out;
+    }
 
-/*Hobbies*/
- 
-/*Formación Académica*/
+    .menu__list__item a:hover:after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+    }
 
-/*Experiencia Profesional*/
+    .menu__list__item__contacto, .menu__list__item__contacto a{
+    font-weight: bold;
+    font-size: 0.8rem;
+    }
 
- /*Contacto*/
+    /* Seccion Title */
+    .title__div{
+        flex-direction: row;
+    }
 
-/*Footer*/
+    .title__profile{
+        width: 20%;
+    }
+
+    .title__network__item:hover{
+    transform: scale(1.3);
+    transition: ease-in-out 0.2s;
+    }
+
+    /* Sección Skills y Hobbies */
+    .skills__box, .hobbies__box{
+        width: 10%;
+    }
+
+    /* Sección Experiencia Académica */
+    .academic__box{
+        width: 20%;
+    }
+
+    /* Sección Experiencia Profesional */
+
+    .experience__section{
+        display: flex;
+    }
+
+    .experience__box{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .experience__img{
+        width: 80%;
+    }
+
+    .experience__info{
+        padding-left: 0;
+    }
+
+    .experiencia__boton--repo, .experience__boton--demo{
+        cursor: pointer;
+    }
+
+    /* Footer */
+    .footer{
+        background-color: var(--color-de-fondo);
+    }
+
+    .footer__list__item:hover{
+        transform: scale(1.3);
+        transition: ease-in-out 0.2s;
+    }
 
 }
